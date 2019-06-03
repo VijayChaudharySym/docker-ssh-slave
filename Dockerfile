@@ -54,3 +54,6 @@ COPY setup-sshd /usr/local/bin/setup-sshd
 EXPOSE 22
 
 ENTRYPOINT ["setup-sshd"]
+
+RUN echo "sleeping 60s"
+RUN sleep 60
